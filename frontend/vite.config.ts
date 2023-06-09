@@ -10,7 +10,7 @@ import path from 'path'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
-function getApiUrl(mode: any, apiUrl?: string) {
+function getApiUrl(mode?: any, apiUrl?: string) {
   if (apiUrl) {
     return apiUrl;
   }
@@ -21,7 +21,7 @@ function getApiUrl(mode: any, apiUrl?: string) {
 
   return 'http://localhost:8800/api';
 }
-export default ({mode, base, port}) => {
+export default ({mode, base, port}:any) => {
 
   const isDev:boolean = mode === 'development';
   const apiUrl:string =  getApiUrl(mode, base)

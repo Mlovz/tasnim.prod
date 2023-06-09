@@ -3,7 +3,6 @@ import cls from './InstallmentPage.module.scss'
 import {InstallmentStepNavigation, LoginOrRegisterToProcced} from "../";
 import { Text} from "@/shared/ui";
 import {
-     getInstallmentIsSuccess, getInstallmentIsSuccessContent, getInstallmentIsSuccessTitle,
     getStepsFormData,
     installmentReducer,
     Step1,

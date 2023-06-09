@@ -19,7 +19,6 @@ const initialState: AuthSchema = {
         content: ''
     },
     type: 'register',
-    forgotForm: null
 }
 
 
@@ -33,12 +32,7 @@ const authSlice = createSlice({
         setUpdateType: (state, action) => {
             state.type = action.payload
         },
-        setUpdateForgotData: (state, action) => {
-            state.forgotForm = {
-                ...state.forgotForm,
-                ...action.payload
-            }
-        }
+
     },
 
     extraReducers: (builder) => {
