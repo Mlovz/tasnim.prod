@@ -20,7 +20,8 @@ const ProfileChangePassword = () => {
         Controller,
         control,
         handleSubmit,
-        isSubmitting
+        isSubmitting,
+        reset
     } = useProfileChangePassword()
 
     const dispatch = useAppDispatch()
@@ -29,8 +30,8 @@ const ProfileChangePassword = () => {
     const error = useSelector(getProfileChangePasswordFetchMessageError)
 
     const onSubmit = async(data: any) => {
-        const res = await dispatch(resetPassword({...data, id: authData?._id, type: 'profile'}))
-
+        await dispatch(resetPassword({...data, id: authData?._id, type: 'profile'}))
+        reset({})
     }
 
     useEffect(() => {

@@ -31,6 +31,7 @@ export const useProfileChangePassword = () => {
         formState: { errors, isValid, isSubmitting },
         watch,
         control,
+        reset
     } = useForm({
         mode: 'onChange',
         resolver: yupResolver(schema),
@@ -51,6 +52,7 @@ export const useProfileChangePassword = () => {
         isValid,
         ProfileChangePasswordType,
         Controller,
-        isSubmitting
+        isSubmitting,
+        reset
     }
 }
