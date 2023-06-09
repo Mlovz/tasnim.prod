@@ -1,11 +1,12 @@
 import cls from './ProfileData.module.scss'
 import {Button, Card, Form, HStack, Input, InputMask, Text, VStack} from "@/shared/ui";
-import React from "react";
+import React, {useEffect} from "react";
 import {useSelector} from "react-redux";
 import {getUserData} from "@/entities/User";
 import {useProfileDataSchema} from "@/entities/Profile/model/schema/useProfileChangePasswordSchema";
 import {useAppDispatch} from "@/shared/hooks/useStore";
 import {updateFetchProfileData} from "@/entities/Profile/model/services/updateFetchProfileData";
+import {getProfileDataFetchMessageError, getProfileDataFetchMessageSuccess, profileActions} from "@/entities/Profile";
 
 const ProfileData = () => {
     const authData = useSelector(getUserData)
@@ -23,17 +24,26 @@ const ProfileData = () => {
     } = useProfileDataSchema(authData)
 
     const dispatch = useAppDispatch()
+    const error = useSelector(getProfileDataFetchMessageError)
+    const success = useSelector(getProfileDataFetchMessageSuccess)
 
     const onSubmit = async(data:any) => {
         await dispatch(updateFetchProfileData(data))
     }
+
+    useEffect(() => {
+        if(error || success){
+            dispatch(profileActions.setUpdateFetchTitle())
+        }
+    },[])
 
     return (
         <Card padding={40} max>
             <VStack gap={28}>
                 <VStack gap={10}>
                     <Text as='h2' size={18}>Данные профиля</Text>
-
+                    {error && <Text as='h2' size={18} variant='error'>{error}</Text>}
+                    {success && <Text as='h2' size={18} variant='success'>{success}</Text>}
                 </VStack>
                 <Form onSubmit={handleSubmit(onSubmit)}>
                     <VStack gap={20}>

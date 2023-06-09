@@ -21,10 +21,17 @@
   cursor: pointer;
   width: 100%;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+
+  .iconIsOpen{
+    transform: rotate(-180deg);
+  }
 }
 
 .transition{
 }
 
 .menu{
+  padding-top: 20px;
 }

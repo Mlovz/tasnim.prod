@@ -5,6 +5,11 @@ import {useAppDispatch} from "@/shared/hooks/useStore";
 import {resetPassword} from "@/features/Auth/model/services/authService";
 import {useSelector} from "react-redux";
 import {getUserData} from "@/entities/User";
+import React, {useEffect} from "react";
+import {
+    getProfileChangePasswordFetchMessageError,
+    getProfileChangePasswordFetchMessageSuccess, profileActions
+} from "@/entities/Profile";
 const ProfileChangePassword = () => {
     const {
         register,
@@ -20,17 +25,27 @@ const ProfileChangePassword = () => {
 
     const dispatch = useAppDispatch()
     const authData = useSelector(getUserData)
+    const success = useSelector(getProfileChangePasswordFetchMessageSuccess)
+    const error = useSelector(getProfileChangePasswordFetchMessageError)
 
     const onSubmit = async(data: any) => {
         const res = await dispatch(resetPassword({...data, id: authData?._id, type: 'profile'}))
 
     }
 
+    useEffect(() => {
+        if(error || success){
+            dispatch(profileActions.setUpdateFetchTitle())
+        }
+    },[])
+
     return (
         <Card padding={40} max>
             <VStack gap={28}>
                 <VStack gap={10}>
                     <Text as='h2' size={18}>Изменение пароля</Text>
+                    {error && <Text as='h2' size={18} variant='error'>{error}</Text>}
+                    {success && <Text as='h2' size={18} variant='success'>{success}</Text>}
                 </VStack>
                 <Form className={cls.form} onSubmit={handleSubmit(onSubmit)}>
                     <VStack gap={20} max>

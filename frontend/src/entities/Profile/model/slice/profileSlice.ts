@@ -22,8 +22,11 @@ const profileSlice = createSlice({
     name: 'profile',
     initialState,
     reducers: {
-        setUpdateFetchTitle: (state, action) => {
-            // state.profileChangePasswordSuccessOrErrorTitle = action.payload
+        setUpdateFetchTitle: (state) => {
+            state.profileChangePasswordFetchMessage.successTitle = ''
+            state.profileChangePasswordFetchMessage.errorTitle = ''
+            state.profileDataFetchMessage.successTitle = ''
+            state.profileDataFetchMessage.errorTitle = ''
         }
     },
     extraReducers: (builder) => {

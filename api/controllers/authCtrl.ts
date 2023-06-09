@@ -259,7 +259,7 @@ const authCtrl = {
     await user.save();
 
     res.status(200).json({
-      success: "Пароль изменен.",
+      title: "Пароль изменен.",
     });
 
   })

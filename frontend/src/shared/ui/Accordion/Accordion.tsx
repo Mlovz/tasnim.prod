@@ -1,14 +1,17 @@
 import cls from './Accordion.module.scss'
 import {Disclosure, Transition} from "@headlessui/react";
 import {FC, ReactNode} from "react";
-import {Text} from "@/shared/ui";
+import {Icon, Text} from "@/shared/ui";
+import {classNames} from "@/shared/lib";
 
 interface AccordionProps{
     trigger: ReactNode;
-    content?: string
+    content?: string,
+    icon?: string,
+    items?: any
 }
 
-const Accordion:FC<AccordionProps> = ({trigger, content}) => {
+const Accordion:FC<AccordionProps> = ({trigger, content, icon, items}) => {
     return (
         <Disclosure as='div' className={cls.accordion} data-headlessui-state="open">
             {({ open, close }) => (
@@ -16,10 +19,9 @@ const Accordion:FC<AccordionProps> = ({trigger, content}) => {
                 <>
 
                     <Disclosure.Button
-                        
                         className={cls.trigger}>
-
                         {trigger}
+                        {icon && <Icon type={icon} className={classNames(cls.icon, {[cls.iconIsOpen]: open}, [])}/>}
                     </Disclosure.Button>
 
                     <Transition
@@ -34,7 +36,11 @@ const Accordion:FC<AccordionProps> = ({trigger, content}) => {
                     >
                         <Disclosure.Panel className={cls.menu} unmount as='div'>
                             {content && <Text as='p' >{content}</Text>}
-
+                            {/*{*/}
+                            {/*    items.map((item) => (*/}
+                            {/*        */}
+                            {/*    ))*/}
+                            {/*}*/}
                         </Disclosure.Panel>
                     </Transition>
                 </>

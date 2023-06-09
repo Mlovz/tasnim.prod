@@ -18,6 +18,7 @@ import { ReactComponent as Bag } from '@/shared/assets/svg/Bag.svg'
 import { ReactComponent as Comment } from '@/shared/assets/svg/Comment.svg'
 import { ReactComponent as ArrowLeft } from '@/shared/assets/svg/arrowLeft.svg'
 import { ReactComponent as Eye } from '@/shared/assets/svg/eye.svg'
+import { ReactComponent as AccordionArrow } from '@/shared/assets/svg/Arrows.svg'
 
 import {newGuid} from "@/shared/lib/guid";
 
@@ -42,6 +43,7 @@ export enum IconType{
     COMMENT = "Comment",
     ARROW_LEFT = "ArrowLeft",
     EYE = "Eye",
+    ACCORDION_ARROW = "AccordionArrow",
 }
 export const icon = new Map([
     [IconType.LOCATION, <Location key={newGuid()} />],
@@ -64,4 +66,5 @@ export const icon = new Map([
     [IconType.COMMENT, <Comment key={newGuid()} />],
     [IconType.ARROW_LEFT, <ArrowLeft key={newGuid()} />],
     [IconType.EYE, <Eye key={newGuid()} />],
+    [IconType.ACCORDION_ARROW, <AccordionArrow key={newGuid()} />],
 ])

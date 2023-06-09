@@ -163,9 +163,9 @@ export const resetPassword = createAsyncThunk<
             currentPassword: params?.old_password || ''
         })
 
-        if(params.type === 'profile'){
-            dispatch(profileActions.setUpdateFetchTitle(''))
-        }
+        // if(params.type === 'profile'){
+        //     dispatch(profileActions.setUpdateFetchTitle(''))
+        // }
 
         if (!data) {
             throw new Error()
@@ -174,9 +174,9 @@ export const resetPassword = createAsyncThunk<
 
         return data
     }catch (err: any){
-        if(params.type === 'profile'){
-            return dispatch(profileActions.setUpdateFetchTitle(err.response.data.message))
-        }
+        // if(params.type === 'profile'){
+        //     return dispatch(profileActions.setUpdateFetchTitle(err.response.data.message))
+        // }
         return rejectWithValue(err.response.data.message)
     }
 })
