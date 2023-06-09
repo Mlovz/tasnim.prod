@@ -1,0 +1,233 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "image": "https://images.wallpaperscraft.ru/image/single/grustnyj_slovo_nadpis_156314_225x300.jpg",
+      "title": "Рассрочка на все продукты со скидкой 20% и даже больше",
+      "content": "Весь январь 2021 действует рассрочка на продукты со скидкой 20%. Год должен начинаться только с хороших новостей...",
+      "createdAt": "3 дня назад",
+      "number_of_post_views": 80
+    },
+    {
+      "id": 2,
+      "image": "https://oboi.ringtonz.ru/uploads/posts/2020-04/1585919485_grustnyj_slovo_bukvy_153796_1440x2560.jpg",
+      "title": "Рассрочка на все продукты со скидкой 20% и даже больше",
+      "content": "Весь январь 2021 действует рассрочка на продукты со скидкой 20%. Год должен начинаться только с хороших новостей...",
+      "createdAt": "3 дня назад",
+      "number_of_post_views": 80
+    },
+    {
+      "id": 3,
+      "image": "https://prodigits.co.uk/thumbs/wallpapers/p2/logo-brands/28/9262716712305082.jpg",
+      "title": "Рассрочка на все продукты со скидкой 20% и даже больше",
+      "content": "Весь январь 2021 действует рассрочка на продукты со скидкой 20%. Год должен начинаться только с хороших новостей...",
+      "createdAt": "3 дня назад",
+      "number_of_post_views": 80
+    },
+    {
+      "id": 4,
+      "image": "https://downloadwap.com/thumbs2/wallpapers/p2/2019/signs/20/a94ce22e13424715.jpg",
+      "title": "Рассрочка на все продукты со скидкой 20% и даже больше",
+      "content": "Весь январь 2021 действует рассрочка на продукты со скидкой 20%. Год должен начинаться только с хороших новостей...",
+      "createdAt": "3 дня назад",
+      "number_of_post_views": 80
+    },
+    {
+      "id": 5,
+      "image": "https://downloadwap.com/thumbs2/wallpapers/p2/2019/fcelebs/29/89344fb913174996.jpg",
+      "title": "Рассрочка на все продукты со скидкой 20% и даже больше",
+      "content": "Весь январь 2021 действует рассрочка на продукты со скидкой 20%. Год должен начинаться только с хороших новостей...",
+      "createdAt": "3 дня назад",
+      "number_of_post_views": 80
+    },
+    {
+      "id": 6,
+      "image": "https://prodigits.co.uk/thumbs/wallpapers/p2/signs/20/ebd9bfa512644872.jpg",
+      "title": "Рассрочка на все продукты со скидкой 20% и даже больше",
+      "content": "Весь январь 2021 действует рассрочка на продукты со скидкой 20%. Год должен начинаться только с хороших новостей...",
+      "createdAt": "3 дня назад",
+      "number_of_post_views": 80
+    }
+  ],
+  "products": [
+    {
+      "_id": "1",
+      "price": 9590,
+      "oldPrice": 7990,
+      "content": "Смарт-часы Smarterra FitMaster Aura",
+      "rating": 2,
+      "images": [
+        {
+          "url": "https://cs5.livemaster.ru/storage/65/e1/12273693f97d7f14f1d718b72dgp--ukrasheniya-derevyannye-naruchnye-chasy-muzhskie-s-gravirovko.jpg",
+          "public_id": "images1"
+        },
+        {
+          "url": "https://sun9-64.userapi.com/impg/IOWIbF1dLPNtt3HOpiALVqwAfSCilkooEgXYrQ/fsn8FyQc8oA.jpg?size=520x0&quality=95&sign=a4a2b93ffac9ee122161d10ab34b6f1b",
+          "public_id": "images2"
+        },
+        {
+          "url": "https://specialday.com.ua/wp-content/uploads/2023/04/specialday_imennie_chasi_9.jpg",
+          "public_id": "images3"
+        }
+      ]
+    },
+    {
+      "_id": "2",
+      "price": 9590,
+      "oldPrice": 7990,
+      "content": "Смарт-часы Smarterra FitMaster Aura",
+      "rating": 3,
+      "status": "new",
+      "images": [
+        {
+          "url": "https://cs5.livemaster.ru/storage/65/e1/12273693f97d7f14f1d718b72dgp--ukrasheniya-derevyannye-naruchnye-chasy-muzhskie-s-gravirovko.jpg",
+          "public_id": "images1"
+        },
+        {
+          "url": "https://sun9-64.userapi.com/impg/IOWIbF1dLPNtt3HOpiALVqwAfSCilkooEgXYrQ/fsn8FyQc8oA.jpg?size=520x0&quality=95&sign=a4a2b93ffac9ee122161d10ab34b6f1b",
+          "public_id": "images2"
+        },
+        {
+          "url": "https://specialday.com.ua/wp-content/uploads/2023/04/specialday_imennie_chasi_9.jpg",
+          "public_id": "images3"
+        }
+      ]
+    },
+    {
+      "_id": "3",
+      "price": 9590,
+      "oldPrice": 7990,
+      "content": "Смарт-часы Smarterra FitMaster Aura",
+      "rating": 1,
+      "images": [
+        {
+          "url": "https://cs5.livemaster.ru/storage/65/e1/12273693f97d7f14f1d718b72dgp--ukrasheniya-derevyannye-naruchnye-chasy-muzhskie-s-gravirovko.jpg",
+          "public_id": "images1"
+        },
+        {
+          "url": "https://sun9-64.userapi.com/impg/IOWIbF1dLPNtt3HOpiALVqwAfSCilkooEgXYrQ/fsn8FyQc8oA.jpg?size=520x0&quality=95&sign=a4a2b93ffac9ee122161d10ab34b6f1b",
+          "public_id": "images2"
+        },
+        {
+          "url": "https://specialday.com.ua/wp-content/uploads/2023/04/specialday_imennie_chasi_9.jpg",
+          "public_id": "images3"
+        }
+      ]
+    },
+    {
+      "_id": "4",
+      "price": 9590,
+      "oldPrice": 7990,
+      "content": "Смарт-часы Smarterra FitMaster Aura",
+      "rating": 5,
+      "images": [
+        {
+          "url": "https://cs5.livemaster.ru/storage/65/e1/12273693f97d7f14f1d718b72dgp--ukrasheniya-derevyannye-naruchnye-chasy-muzhskie-s-gravirovko.jpg",
+          "public_id": "images1"
+        },
+        {
+          "url": "https://sun9-64.userapi.com/impg/IOWIbF1dLPNtt3HOpiALVqwAfSCilkooEgXYrQ/fsn8FyQc8oA.jpg?size=520x0&quality=95&sign=a4a2b93ffac9ee122161d10ab34b6f1b",
+          "public_id": "images2"
+        },
+        {
+          "url": "https://specialday.com.ua/wp-content/uploads/2023/04/specialday_imennie_chasi_9.jpg",
+          "public_id": "images3"
+        }
+      ],
+      "status": "promotion"
+    },
+    {
+      "_id": "5",
+      "price": 9590,
+      "oldPrice": 7990,
+      "content": "Смарт-часы Smarterra FitMaster Aura",
+      "rating": 4,
+      "images": [
+        {
+          "url": "https://cs5.livemaster.ru/storage/65/e1/12273693f97d7f14f1d718b72dgp--ukrasheniya-derevyannye-naruchnye-chasy-muzhskie-s-gravirovko.jpg",
+          "public_id": "images1"
+        },
+        {
+          "url": "https://sun9-64.userapi.com/impg/IOWIbF1dLPNtt3HOpiALVqwAfSCilkooEgXYrQ/fsn8FyQc8oA.jpg?size=520x0&quality=95&sign=a4a2b93ffac9ee122161d10ab34b6f1b",
+          "public_id": "images2"
+        },
+        {
+          "url": "https://specialday.com.ua/wp-content/uploads/2023/04/specialday_imennie_chasi_9.jpg",
+          "public_id": "images3"
+        }
+      ]
+    },
+    {
+      "_id": "6",
+      "price": 9590,
+      "oldPrice": 7990,
+      "content": "Смарт-часы Smarterra FitMaster Aura",
+      "rating": 2,
+      "images": [
+        {
+          "url": "https://cs5.livemaster.ru/storage/65/e1/12273693f97d7f14f1d718b72dgp--ukrasheniya-derevyannye-naruchnye-chasy-muzhskie-s-gravirovko.jpg",
+          "public_id": "images1"
+        },
+        {
+          "url": "https://sun9-64.userapi.com/impg/IOWIbF1dLPNtt3HOpiALVqwAfSCilkooEgXYrQ/fsn8FyQc8oA.jpg?size=520x0&quality=95&sign=a4a2b93ffac9ee122161d10ab34b6f1b",
+          "public_id": "images2"
+        },
+        {
+          "url": "https://specialday.com.ua/wp-content/uploads/2023/04/specialday_imennie_chasi_9.jpg",
+          "public_id": "images3"
+        }
+      ]
+    },
+    {
+      "_id": "7",
+      "price": 9590,
+      "oldPrice": 7990,
+      "content": "Смарт-часы Smarterra FitMaster Aura",
+      "rating": 4,
+      "images": [
+        {
+          "url": "https://cs5.livemaster.ru/storage/65/e1/12273693f97d7f14f1d718b72dgp--ukrasheniya-derevyannye-naruchnye-chasy-muzhskie-s-gravirovko.jpg",
+          "public_id": "images1"
+        },
+        {
+          "url": "https://sun9-64.userapi.com/impg/IOWIbF1dLPNtt3HOpiALVqwAfSCilkooEgXYrQ/fsn8FyQc8oA.jpg?size=520x0&quality=95&sign=a4a2b93ffac9ee122161d10ab34b6f1b",
+          "public_id": "images2"
+        },
+        {
+          "url": "https://specialday.com.ua/wp-content/uploads/2023/04/specialday_imennie_chasi_9.jpg",
+          "public_id": "images3"
+        }
+      ],
+      "status": "promotion"
+    },
+    {
+      "_id": "8",
+      "price": 9590,
+      "oldPrice": 7990,
+      "content": "Смарт-часы Smarterra FitMaster Aura",
+      "rating": 5,
+      "images": [
+        {
+          "url": "https://cs5.livemaster.ru/storage/65/e1/12273693f97d7f14f1d718b72dgp--ukrasheniya-derevyannye-naruchnye-chasy-muzhskie-s-gravirovko.jpg",
+          "public_id": "images1"
+        },
+        {
+          "url": "https://sun9-64.userapi.com/impg/IOWIbF1dLPNtt3HOpiALVqwAfSCilkooEgXYrQ/fsn8FyQc8oA.jpg?size=520x0&quality=95&sign=a4a2b93ffac9ee122161d10ab34b6f1b",
+          "public_id": "images2"
+        },
+        {
+          "url": "https://specialday.com.ua/wp-content/uploads/2023/04/specialday_imennie_chasi_9.jpg",
+          "public_id": "images3"
+        }
+      ],
+      "status": "new"
+    }
+  ]
+}

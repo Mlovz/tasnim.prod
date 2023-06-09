@@ -1,0 +1,96 @@
+.productCard{
+  position: relative;
+  max-width: 262px;
+  width: 262px;
+  border-radius: 15px;
+  cursor: pointer;
+  &::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    //border: 1.5px solid transparent;
+    border-radius: inherit;
+    transition: border .2s;
+
+  }
+
+  &:hover::before{
+    //border: 1.5px solid #0A5EC4;
+    background: var(--blue_100);
+    z-index: -1;
+  }
+}
+
+.image{
+  width: 100%;
+  height: 232px;
+  border-radius: 15px;
+  position: relative;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+}
+
+.imageHover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  >div{
+    width: 100%;
+  }
+}
+
+.imageDots{
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  >div{
+    width: 8px;
+    height: 8px;
+    background: var(--gray_200);
+    border-radius: 100%;
+    border: 1px solid var(--blue_200);
+    &.active{
+      background: var(--blue_500);
+    }
+  }
+}
+
+
+.oldPrice{
+  color: var(--gray_300);
+  text-decoration: line-through;
+}
+
+.discount{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 3px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FFFFFF;
+  border-radius: 15px;
+
+  &.new{
+    background: #0FBA68;
+  }
+  &.promotion{
+    background: var(--red_500);
+  }
+}

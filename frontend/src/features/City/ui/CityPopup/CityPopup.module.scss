@@ -1,0 +1,33 @@
+.city{
+  cursor: pointer;
+  position: relative;
+
+  .cityText{
+    color: #fff;
+  }
+
+
+  .popup{
+    position: absolute;
+    top: 35px;
+    width: 261px;
+    background: #FFFFFF;
+    border: 1.5px solid var(--gray_100);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    z-index: 995;
+    padding: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+
+    &.isOpen{
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cityYes, .cityNo{
+      padding: 11px 22px;
+    }
+  }
+}

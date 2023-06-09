@@ -1,0 +1,25 @@
+
+.form{
+  max-width: 740px;
+  width: 100%;
+  margin: 0 auto;
+
+
+  .formBlock{
+    border-top: 1px solid var(--gray_100);
+    padding-top: 28px;
+
+    &:nth-child(1){
+      border: none;
+      padding: 0;
+    }
+  }
+
+}
+.field{
+  width: 360px;
+}
+
+.formFooter{
+  margin-top: 10px;
+}

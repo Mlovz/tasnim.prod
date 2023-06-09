@@ -1,0 +1,53 @@
+
+.card {
+  width: 350px;
+  border: 1.5px solid #0A5EC4;
+  border-radius: 15px;
+  padding: 40px;
+
+  .cardItem{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray_100)
+  }
+
+  .mothly{
+    color: var(--blue_500);
+  }
+
+
+  .listBox {
+    //width: max-content;
+  }
+
+  .inputEdit{
+    border: 1.5px solid #0A5EC4;
+    border-radius: 10px;
+    max-width: 95px;
+    width: 95px;
+    padding: 7px;
+    input{
+      width: 100%;
+    }
+  }
+
+
+  .tarrifMenu{
+    width: max-content;
+    ul{
+      li{
+        font-size: 14px;
+      }
+    }
+  }
+
+  .termMenu{
+    width: max-content;
+    ul{
+      width: 100px;
+      height: 200px;
+      li{
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+$fontsize: 16px; // Body Font Size
+$lineheight: 150%; // Document Line Height
+$userfont: 'TTNorms', sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+:root {
+  --fontsize: 16px;
+  --lineheight: 150%;
+  --userfont: 'TTNorms', sans-serif;
+  --systemfont:-apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+  --white: #ffffff;
+  //Black
+  --black: #000000;
+  //Blue
+  --blue_100: #e6f1ff;
+  --blue_100_04: rgba(230, 241, 255, 0.4);
+  --blue_200: #a5c8f2;
+  --blue_300: #6ba1e3;
+  --blue_400: #377ed4;
+  --blue_500: #0a5ec4;
+  --blue_600: #074fa8;
+  --blue_700: #04438f;
+  --blue_800: #023573;
+  --blue_900: #012959;
+  //Red
+  --red_100: #ffebeb;
+  --red_200: #ffc2c2;
+  --red_300: #ff9a9a;
+  --red_400: #ff7171;
+  --red_500: #ff3333;
+  --red_600: #e62f2f;
+  --red_700: #b32424;
+  --red_800: #801a1a;
+  --red_900: #330a0a;
+  //Gray
+  --gray_50: #f3f3f3;
+  --gray_100: #e5e5e5;
+  --gray_200: #cccccc;
+  --gray_300: #b2b2b2;
+  --gray_400: #999999;
+  --gray_500: #808080;
+  --gray_600: #666666;
+  --gray_700: #4d4d4d;
+  --gray_800: #333333;
+  --gray_900: #1a1a1a;
+}
+
+
+
+
+

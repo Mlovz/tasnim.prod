@@ -1,0 +1,30 @@
+.step1{
+  max-width: 840px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.stepForm{
+  flex-grow: 1;
+}
+
+.stepBtn{
+  margin-top: 40px;
+}
+
+
+.errorText{
+  color: red;
+}
+
+.field{
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid var(--gray_100);
+  &:nth-child(1){
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+

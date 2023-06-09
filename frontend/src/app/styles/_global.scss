@@ -1,0 +1,225 @@
+@import "./variables";
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format('woff2');
+  }
+}
+
+@include font('TTNorms', normal, 400, '../fonts/TTNorms-Regular.woff2');
+@include font('TTNorms', normal, 500, '../fonts/TTNorms-Medium.woff2');
+@include font('TTNorms', normal, 700, '../fonts/TTNorms-Bold.woff2');
+@include font('TTNorms', normal, 800, '../fonts/TTNorms-ExtraBold.woff2');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--userfont);
+  font-size: var(--fontsize);
+  line-height: var(--lineheight);
+}
+
+::-webkit-scrollbar{
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-track{
+  background: #dbdbdb;
+
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 4px;
+  background-color: #a8a8a8;
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+::-webkit-scrollbar-button {
+  display:none;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+::selection {
+  background-color: var(--blue_500);
+  color: #fff;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  color: var(--gray_900);
+  min-width: 320px;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+
+  * {
+    outline: none !important;
+  }
+  padding-bottom: 200px;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app {
+  min-height: 100vh;
+  height: 100%;
+}
+
+svg {
+  display: flex;
+}
+
+
+
+.slick-list {
+  height: inherit !important;
+}
+.slick-track {
+  height: inherit !important;
+}
+.slick-slide {
+  div {
+    width: inherit !important;
+    // height: inherit !important;
+  }
+
+  display: flex !important;
+  justify-items: center !important;
+  justify-content: center !important;
+}
+.slick-next:before,
+.slick-prev:before {
+  display: none !important;
+}
+// .slick-dots li button:before {
+//   display: none !important;
+//   color: rgba(255, 255, 255, 0.6) !important;
+//   font-size: 8px !important;
+//   // ${Container}:hover & {
+//   //   display: inline-block;
+//   // }
+// }
+// .slick-dots li.slick-active button:before {
+//   opacity: 0.75 !important;
+//   color: #fff !important;
+// }
+// .slick-dots {
+//   display: none !important;
+//   position: absolute !important;
+//   bottom: 10px !important;
+// }
+
+.circle {
+  display: flex !important;
+  z-index: 100 !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+  box-sizing: border-box !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  outline: none !important;
+  cursor: pointer !important;
+  font-size: 42px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transition: all 0.1s ease-in-out;
+
+  svg {
+    display: flex;
+    width: 10px;
+    path {
+      stroke: var(--gray_900);
+    }
+  }
+}
+
+.slick-dots {
+  bottom: 15px !important;
+
+  li {
+    margin: 0 0 !important;
+
+    button {
+      padding: 0 !important;
+
+      &:before {
+        content: '' !important;
+        width: 10px !important;
+        height: 10px !important;
+        background: var(--blue_200) !important;
+        border-radius: 50%;
+        opacity: 1 !important;
+      }
+    }
+
+    &.slick-active button:before {
+      background: var(--blue_500) !important;
+    }
+  }
+}
+
+.rc-slider {
+  &-handle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff !important;
+    border: 2px solid var(--blue_500) !important;
+    &-dragging {
+      border-color: var(--blue_500) !important;
+      box-shadow: 0 0 5px var(--blue_500) !important;
+    }
+
+    &:hover {
+      border-color: var(--blue_500) !important;
+    }
+  }
+
+  &-track {
+    background: var(--blue_500) !important;
+  }
+}

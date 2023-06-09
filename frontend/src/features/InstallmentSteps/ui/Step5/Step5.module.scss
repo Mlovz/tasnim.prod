@@ -1,0 +1,52 @@
+
+
+.form{
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item{
+  background: #F3F3F3;
+  border: 1px solid var(--gray_100);
+  border-radius: 10px;
+  padding: 23px;
+  position: relative;
+  cursor: pointer;
+  .active{
+    width: 220px;
+  }
+
+  >input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+  }
+
+
+  &.active{
+    background: #E6F1FF;
+    border: 1px solid #0A5EC4;
+    span{
+      color: var(--blue_500);
+
+    }
+  }
+
+  .disabled{
+    span{
+      color: red;
+    }
+  }
+
+  .itemText{
+    width: 220px;
+  }
+}

@@ -1,0 +1,14 @@
+
+.calcInfo{
+  width: calc(351px - 60px);
+  padding-left: 40px;
+  border-left: 1px solid var(--gray_100);
+
+}
+
+.calcInfoItem{
+  width: 100%;
+  .price{
+    color: var(--blue_500);
+  }
+}

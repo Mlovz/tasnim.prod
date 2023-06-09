@@ -1,0 +1,100 @@
+.ListBox{
+    width: 100%;
+}
+
+.btn{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    >span{
+        color: var(--gray_900);
+    }
+
+    &.input{
+        width: 100%;
+        padding: 15px;
+        border: 1.5px solid #E6E6E6;
+        border-radius: 10px;
+        color: #B3B3B3;
+        position: relative;
+
+        .label{
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 0 10px;
+            transition: all .2s;
+            color: var(--gray_300);
+            .danger{
+                display: flex;
+                margin-left: 5px;
+                color: red;
+            }
+
+            &.isActive{
+                position: absolute;
+                height: 12px;
+                top: -7px;
+                left: 15px;
+                font-size: 12px;
+                line-height: 0;
+                transition: all .2s;
+            }
+        }
+    }
+
+    &.clear{
+
+    }
+
+
+}
+
+.hstack{
+
+}
+
+.trigger {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options {
+    background: #fff;
+    position: absolute;
+    z-index: 10000;
+    border-radius: 12px;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+
+
+    &.max{
+        width: 99%;
+    }
+
+}
+
+.item {
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    &:hover{
+        background: var(--blue_100);
+    }
+}
+
+.selected {
+    background: var(--blue_200);
+}
+
+.rotate{
+    transform: rotate(180deg);
+}

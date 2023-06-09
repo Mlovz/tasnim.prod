@@ -1,0 +1,87 @@
+
+
+.profileNav{
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  border: 1.5px solid #E6E6E6;
+  border-radius: 15px;
+  max-width: 263px;
+  width: 100%;
+}
+
+.navList{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  li{
+
+    a{
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 135%;
+      color: var(--gray_300);
+    }
+
+    &:nth-child(4){
+      transform: translateX(-3px);
+      a{
+        svg{
+          path{
+            fill: none;
+            stroke: var(--gray_400);
+          }
+        }
+      }
+    }
+
+    &:nth-child(5){
+      a{
+        svg{
+          path{
+            fill: none;
+            stroke: var(--gray_400);
+          }
+        }
+      }
+    }
+
+    &.active{
+      a{
+        color: var(--gray_900);
+      }
+      svg{
+        path{
+          fill: var(--gray_900);
+        }
+      }
+
+      &:nth-child(4){
+        a{
+          svg{
+            path{
+              fill: none;
+              stroke: var(--gray_900);
+            }
+          }
+        }
+      }
+
+      &:nth-child(5){
+        a{
+          svg{
+            path{
+              fill: none;
+              stroke: var(--gray_900);
+            }
+          }
+        }
+      }
+    }
+  }
+}

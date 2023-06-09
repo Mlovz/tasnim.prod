@@ -1,0 +1,15 @@
+
+.navTop{
+  background: var(--blue_500);
+
+  .wrap{
+    height: 46px;
+
+    .city,
+    .login{
+      color: #fff;
+      cursor: pointer;
+    }
+
+  }
+}

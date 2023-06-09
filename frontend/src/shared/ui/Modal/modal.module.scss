@@ -1,0 +1,63 @@
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.1s;
+  background: rgba(26, 26, 26, 0.3);
+  z-index: 100000;
+
+  &.opened {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 40px;
+  background: #ffffff;
+  border: 1.5px solid var(--blue_500);
+  border-radius: 10px;
+  max-width: 450px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.1s;
+
+  &.opened {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: static;
+}
+
+.loader {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

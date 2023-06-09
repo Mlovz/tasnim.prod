@@ -1,0 +1,24 @@
+
+
+.tabs{
+  background: #e6f1ff7f;
+  border-radius: 56px;
+  overflow: hidden;
+  width: max-content;
+
+  .tab{
+    width: 165px;
+    padding: 12px;
+    border-radius: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    transition: all .2s;
+    cursor: pointer;
+
+    &.selected{
+      color: #FFFFFF;
+      background: var(--blue_500);
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.stepNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 438px;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: var(--gray_100);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+  }
+}
+
+.stepProgress {
+  position: absolute;
+  background: var(--blue_500);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  width: 0%;
+  height: 2px;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.stepitems {
+  position: relative;
+}
+
+.stepItemText {
+  position: absolute;
+  top: -28px;
+  left: -10px;
+  width: max-content;
+  color: var(--gray_100);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 135%;
+
+  &.active {
+    color: var(--blue_500);
+  }
+}
+
+.stepItemCircle {
+  width: 16px;
+  height: 16px;
+  background: var(--gray_100);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+
+  &.active {
+    background: var(--blue_500);
+  }
+
+  &.loading {
+    background: #fff;
+    border-color: var(--blue_500);
+  }
+}

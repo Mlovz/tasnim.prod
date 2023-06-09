@@ -1,0 +1,23 @@
+
+.title{
+  color: var(--blue_500) ;
+  font-weight: 700;
+}
+
+.btnAuto{
+
+}
+
+.cityBtn{
+  width: 100%;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  cursor: pointer;
+
+  &.active{
+    font-weight: 500;
+    color: var(--blue_500);
+  }
+}

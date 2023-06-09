@@ -1,0 +1,18 @@
+.Tabs {
+  display: flex;
+  cursor: pointer;
+}
+
+.tab{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 135%;
+  color: var(--gray_500);
+  padding-bottom: 13px;
+  border-bottom: 2px solid transparent;
+}
+
+.selected {
+  color: var(--blue_500);
+  border-bottom: 2px solid var(--blue_500);
+}

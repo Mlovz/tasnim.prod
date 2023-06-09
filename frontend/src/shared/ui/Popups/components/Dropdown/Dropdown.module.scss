@@ -1,0 +1,18 @@
+.menu {
+  position: absolute;
+  z-index: 10000;
+  flex-direction: column;
+  display: flex;
+  padding: 10px;
+}
+
+.item {
+  display: flex;
+  padding: 6px 9px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  &:hover{
+    background: var(--blue_100);
+  }
+}

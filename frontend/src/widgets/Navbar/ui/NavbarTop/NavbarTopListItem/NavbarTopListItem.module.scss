@@ -1,0 +1,51 @@
+
+.item{
+  font-weight: 500 ;
+  font-size: 14px ;
+  line-height: 130% ;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 0;
+
+  .list{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    background: #FFFFFF;
+    border: 1.5px solid #E6E6E6;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    li{
+      display: flex;
+      a{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        padding: 6px 10px;
+        border-radius: 10px;
+        color: var(--gray_900);
+        &:hover{
+          background: var(--blue_100);
+        }
+      }
+    }
+  }
+  &:hover{
+    .list{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+
+.active {
+
+
+  //border: 1px solid red;
+}

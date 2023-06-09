@@ -1,0 +1,33 @@
+
+.list{
+}
+
+.title{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--gray_600);
+}
+
+.listItems{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.listItem{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--gray_600);
+}
+
+.circle{
+  min-width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background:var(--gray_600);
+}

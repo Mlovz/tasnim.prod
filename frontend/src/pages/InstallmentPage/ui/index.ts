@@ -1,0 +1,2 @@
+export {default as InstallmentStepNavigation} from './InstallmentStepNavigation/InstallmentStepNavigation'
+export {default as LoginOrRegisterToProcced} from './LoginOrRegisterToProcced/LoginOrRegisterToProcced'
