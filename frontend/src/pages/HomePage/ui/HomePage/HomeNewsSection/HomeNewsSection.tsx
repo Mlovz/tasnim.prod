@@ -8,9 +8,6 @@ import HomeNewsSectionBlock
 const HomeNewsSection = () => {
     const {data, isLoading}:any = useNewsHome('')
 
-    if(!data?.length && !isLoading){
-        return null
-    }
 
     return (
         <VStack max gap={40}>
