@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const rtkApi = createApi({
     reducerPath: "api",
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://80.78.253.88',
+        baseUrl: __API__,
         // 'http://localhost:8000'
         prepareHeaders: (headers) => {
             const token = localStorage.getItem("token");
