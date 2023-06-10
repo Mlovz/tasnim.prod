@@ -17,6 +17,8 @@ const Calculator = () => {
     } = useCalculate()
 
 
+
+
     return (
         <VStack gap={40} align='center' className={cls.calculator}>
             <Text as='h2' size={36} align='center' fw={700}>Калькулятор рассрочки</Text>

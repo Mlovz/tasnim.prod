@@ -15,6 +15,8 @@ export const useCalculate = () => {
     const [activeTarrif, setActiveTarrif] = useState<ITariffItem>(
         tariffItems[tarrif.value]
     )
+    const initialFeeCoefficient = price > 50000 ? 0.4 : 0.25
+    let initialFeePrice = Math.round(price * initialFeeCoefficient)
 
     const [result, setResult] = useState({
         monthlyPayment: 0,
@@ -45,6 +47,13 @@ export const useCalculate = () => {
         switch (type) {
             case 'price':
                 setPrice(value)
+                setInitialFee(Math.round(value * initialFeeCoefficient) > initialFee
+                    ? Math.round(value * initialFeeCoefficient)
+                    : initialFee > value
+                        ? value
+                        : initialFee)
+
+
                 break
             case 'term':
                 setTerm(value)
@@ -65,6 +74,13 @@ export const useCalculate = () => {
     useEffect(() => {
         calculate()
     }, [price, tarrif, term, initialFee])
+
+    useEffect(() => {
+        if(price > 1000000){
+            setPrice(1000000)
+        }
+    }, [price]);
+
 
     return{
         tarrif,
