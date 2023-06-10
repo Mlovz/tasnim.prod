@@ -3,6 +3,8 @@ export enum AppRoutes {
     INSTALLMENT = 'installment',
     NOT_FOUND = 'not_found',
     PROFILE = 'profile',
+    NEWS = 'news',
+    NEWS_DETAIL = 'news_detail',
 }
 
 // export const AppRouteByPath: Record<AppRoutes, string> = {
@@ -21,6 +23,7 @@ export const getRouteProfileFavorites = () => '/profile/favorites'
 export const getRouteProfileReviews = () => '/profile/reviews'
 
 export const getRouteNews = () => '/news'
+export const getRouteNewsDetail = () => '/news/:id'
 export const getRouteStock = () => '/stock'
 export const getRoutePartners = () => '/partners'
 export const getRouteReviews = () => '/reviews'

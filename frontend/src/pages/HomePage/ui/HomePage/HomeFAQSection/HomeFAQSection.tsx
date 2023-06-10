@@ -38,8 +38,9 @@ const HomeFAQSection = () => {
 
             <VStack max >
                 {
-                    items.map((item:any) => (
+                    items.map((item:any, index:any) => (
                         <Accordion
+                            key={index}
                             icon={IconType.ACCORDION_ARROW}
                             trigger={
                                 <Text as='p' size={18} variant='success'>{item.name}</Text>

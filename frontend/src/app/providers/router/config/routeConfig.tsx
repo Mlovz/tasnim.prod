@@ -1,13 +1,13 @@
 import {
     AppRoutes,
     getRouteInstallment,
-    getRouteMain,
+    getRouteMain, getRouteNews, getRouteNewsDetail,
     getRoutePersonal,
     getRouteProfile, getRouteProfileFavorites,
     getRouteProfilePurchases, getRouteProfileReviews, getRouteReviews
 } from "@/shared/conts/router";
 import {AppRoutesProps} from "@/shared/types/router";
-import {HomePage, ProfilePage, NotFoundPage, InstallmentPage} from "@/pages";
+import {HomePage, ProfilePage, NotFoundPage, InstallmentPage, NewsPage, NewsDetailPage} from "@/pages";
 import ProfileRoute from "@/pages/ProfilePage/ui/ProfileRoute/ProfileRoute";
 
 export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
@@ -49,5 +49,13 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
     [AppRoutes.NOT_FOUND]: {
         path: '*',
         element: <NotFoundPage />
+    },
+    [AppRoutes.NEWS]: {
+        path: getRouteNews(),
+        element: <NewsPage />
+    },
+    [AppRoutes.NEWS_DETAIL]: {
+        path: getRouteNewsDetail(),
+        element: <NewsDetailPage />
     }
 }

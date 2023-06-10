@@ -8,13 +8,16 @@ import 'slick-carousel/slick/slick-theme.css'
 
 import {BrowserRouter} from 'react-router-dom'
 import {StoreProvider} from "@/app/providers/store/ui/StoreProvider";
+import {ScrollToTop} from "@/shared/ui";
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   // <React.StrictMode>
       <BrowserRouter>
           <StoreProvider>
-              <App />
+              <ScrollToTop>
+                  <App />
+              </ScrollToTop>
           </StoreProvider>
       </BrowserRouter>
   // </React.StrictMode>

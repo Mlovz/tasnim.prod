@@ -10,7 +10,7 @@ interface HomeNewsSectionBlockProps{
 }
 const HomeNewsSectionBlock:FC<HomeNewsSectionBlockProps> = ({isLoading, news}) => {
 
-    if(!isLoading){
+    if(isLoading){
       return(
           <HStack justify='between' wrap='wrap' gap={28} max>
               <Skeleton width={361} height={282} border={15}/>
@@ -27,7 +27,7 @@ const HomeNewsSectionBlock:FC<HomeNewsSectionBlockProps> = ({isLoading, news}) =
         <HStack wrap='wrap' justify='between' gap={28}>
             {
                 news?.map((item) => (
-                    <NewsCard key={item.id} item={item} variant='shadow'/>
+                    <NewsCard key={item.id} item={item} variant='shadow' to={`/news/${item.id}`}/>
                 ))
             }
         </HStack>

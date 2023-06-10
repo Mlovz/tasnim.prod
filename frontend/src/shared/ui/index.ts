@@ -22,4 +22,5 @@ export {List} from './List/List'
 export type {TextSize, TextWeight} from './Text/Text'
 export  {default as Card} from './Card/components/Card/Card'
 export  {default as Accordion} from './Accordion/Accordion'
+export  {default as ScrollToTop} from './ScrollToTop/ScrollToTop'
 

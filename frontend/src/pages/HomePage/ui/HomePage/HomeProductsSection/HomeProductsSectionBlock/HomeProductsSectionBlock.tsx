@@ -10,7 +10,7 @@ interface HomeProductsSectionBlockProps{
 
 const HomeProductsSectionBlock:FC<HomeProductsSectionBlockProps> = ({products, isLoading}) => {
 
-    if(!isLoading){
+    if(isLoading){
         return (
             <HStack wrap='wrap' gap={28} justify='between'>
                 {
