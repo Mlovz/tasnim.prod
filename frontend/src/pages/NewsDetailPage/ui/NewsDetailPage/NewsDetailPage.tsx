@@ -24,17 +24,17 @@ const NewsDetailPage = () => {
             <VStack max gap={20}>
                 <Text as='h1' size={50}>{data?.title}</Text>
                 <HStack gap={40}>
-                    <Text variant='success' as='span' size={12}>{data.createdAt}</Text>
+                    <Text variant='success' as='span' size={12}>{data?.createdAt}</Text>
                     <HStack gap={10}>
                         <Icon type={IconType.EYE}/>
-                        <Text variant='success' as='span' size={12}>{data.number_of_post_views}</Text>
+                        <Text variant='success' as='span' size={12}>{data?.number_of_post_views}</Text>
                     </HStack>
                 </HStack>
             </VStack>
 
-            <AppImage className={cls.detailImage} width='100%' height={527} src={data.image} alt='NewsImage'/>
+            <AppImage className={cls.detailImage} width='100%' height={527} src={data?.image} alt='NewsImage'/>
 
-            <Text>{data.content}</Text>
+            <Text>{data?.content}</Text>
         </VStack>
     );
 };

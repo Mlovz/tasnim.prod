@@ -37,12 +37,12 @@ const NewsCard:FC<NewsCardProps> = ({view='column', variant, className, item, to
             <AppLink to={to}>
                 <VStack gap={20} className={classNames(cls.newsCard, {}, classes)}>
                     <div className={cls.newsCardImage}>
-                        <AppImage src={item.image} alt='Картинка'/>
+                        <AppImage src={item?.image} alt='Картинка'/>
                     </div>
 
                     <VStack className={cls.content} gap={10}>
-                        <Text as='span' size={12}>{item.createdAt}</Text>
-                        <Text as='h2' size={18}>{item.title}</Text>
+                        <Text as='span' size={12}>{item?.createdAt}</Text>
+                        <Text as='h2' size={18}>{item?.title}</Text>
                     </VStack>
                 </VStack>
             </AppLink>

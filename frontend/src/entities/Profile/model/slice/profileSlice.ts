@@ -33,6 +33,8 @@ const profileSlice = createSlice({
         builder
             .addCase(updateFetchProfileData.pending, (state, action) => {
                 state.isProfileDataLoading = true
+                state.profileDataFetchMessage.successTitle = ''
+                state.profileDataFetchMessage.errorTitle = ''
             })
             .addCase(updateFetchProfileData.fulfilled, (state, action) => {
                 state.isProfileDataLoading = false
@@ -46,7 +48,9 @@ const profileSlice = createSlice({
             })
 
             .addCase(resetPassword.pending, (state, action) => {
-                state.isProfileChangePasswordLoading = true
+                state.isProfileChangePasswordLoading = true;
+                state.profileChangePasswordFetchMessage.errorTitle = '';
+                state.profileChangePasswordFetchMessage.successTitle = ''
             })
             .addCase(resetPassword.fulfilled, (state, action) => {
                 state.isProfileChangePasswordLoading = false

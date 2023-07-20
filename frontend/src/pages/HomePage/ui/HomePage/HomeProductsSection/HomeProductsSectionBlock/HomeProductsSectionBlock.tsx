@@ -15,7 +15,7 @@ const HomeProductsSectionBlock:FC<HomeProductsSectionBlockProps> = ({products, i
             <HStack wrap='wrap' gap={28} justify='between'>
                 {
                     [1,2,3,4,5,6,7,8].map((item) => (
-                        <VStack gap={10}>
+                        <VStack gap={10} key={item}>
                             <Skeleton width={262} height={262} border={15}/>
                             <Skeleton width={100} height={20} border={10}/>
                             <Skeleton width={180} height={15} border={10}/>

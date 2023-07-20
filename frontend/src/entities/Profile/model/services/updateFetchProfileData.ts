@@ -1,5 +1,6 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import {ThunkConfig} from "@/app/providers/store/config/StateSchema";
+import {userActions} from "@/entities/User";
 
 
 export const updateFetchProfileData = createAsyncThunk<
@@ -12,6 +13,10 @@ export const updateFetchProfileData = createAsyncThunk<
     try {
         const newUser = {...user, ...params}
         const {data} = await extra.api.patch('/update/profile',  newUser)
+
+        if(data){
+            dispatch(userActions.setAuthData({user: newUser}))
+        }
 
         return data
     } catch (err: any) {

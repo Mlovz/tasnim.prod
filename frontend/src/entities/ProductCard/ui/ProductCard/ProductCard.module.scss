@@ -14,13 +14,13 @@
     //border: 1.5px solid transparent;
     border-radius: inherit;
     transition: border .2s;
-
+    z-index: -1;
   }
 
   &:hover::before{
     //border: 1.5px solid #0A5EC4;
     background: var(--blue_100);
-    z-index: -1;
+
   }
 }
 
